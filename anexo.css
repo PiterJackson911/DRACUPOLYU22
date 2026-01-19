@@ -1,44 +1,102 @@
-body{
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background: #f0f0f0;
+ }
+
+.header {
+    background: linear-gradient(90deg, #721855 0%, #7e0d49 100%);
+    text-align: center;
 }
 
-.titulo{
-    height: 7%;
+.logo-section {
+    padding: 3px;
     width: 100%;
-    background-color: purple;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav {
-    color: aliceblue;
+    height: 80%;
+    position: relative;
 }
 
-header img {
-    width: 90px;
-    height: 65.9px;
+.logo-section img {
+    height: 120px;
+
 }
 
-.pola{
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
+.logo {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
 }
 
-.jeje{
-    gap: 20px;
-    width: 30%;
-   height: 100%;
+
+.logo-subtitle {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logo-subtitle::before,
+.logo-subtitle::after {
+    content: '♥';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-subtitle::before {
+    left: -30px;
+}
+
+.logo-subtitle::after {
+    right: -30px;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 18px 22px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid  transparent;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    background: rgba(119, 61, 131, 0.808);
+    border-bottom-color: #ff00bf;
+}
+
+.demo {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.demo h2 {
+    color: #ff1493;
+    margin-bottom: 20px;
 }
